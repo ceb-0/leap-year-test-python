@@ -2,11 +2,12 @@
 
 print("############################")
 print("leap year test")
+print("by ceb@")
 print("############################")
 
 def leapyeartest():
     leap_year = False
-    year = input("Type a year:")
+    year = input("Type a year: \n")
     year = int(year)
     if year%400 == 0:
         leap_year = True
@@ -24,7 +25,7 @@ def leapyeartest():
 def want_to_start():
     start = False
     ask_start = 1
-    ask_start = input("Want you start ? Yes = 1 | No = 0")
+    ask_start = input("Want you start ? Yes = 1 | No = 0 \n")
     if type(ask_start) == int or float:
         ask_start = float(ask_start)
         if float(ask_start) == 1:
@@ -36,8 +37,7 @@ def want_to_start():
         want_to_start()
     if start == True:
         leapyeartest()
-    elif start == Fal
-    se:
+    elif start == False:
         want_to_start()
     else:
         print("ERROR-2")
